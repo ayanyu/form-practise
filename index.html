@@ -1,0 +1,268 @@
+mple HTML code to embed your form on your website without any JS calls
+
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarbiyyah form</title>
+    <style>
+      @font-face {
+        font-display: block;
+        font-family: Roboto;
+        src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 600;
+        src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 700;
+        src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+      }
+    </style>
+    <style>
+      #sib-container input:-ms-input-placeholder {
+        text-align: left;
+        font-family: "Helvetica", sans-serif;
+        color: #c0ccda;
+      }
+
+      #sib-container input::placeholder {
+        text-align: left;
+        font-family: "Helvetica", sans-serif;
+        color: #c0ccda;
+      }
+    </style>
+    <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/61c63ac2f8837041dc7e.css">
+    <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/74ef9830e6b42f1f3c59.css">
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  </head>
+
+  <body class="sib-form">
+    <div id="sib-form-container" class="sib-form-container" style="text-align: center;
+       background-color: #ffffff;                                 ">
+      <div id="sib-container" class="sib-container--large sib-container--vertical" style=" text-align:center; background-color:rgba(255,255,255,0.95); max-width:540px; border-radius:17px; border-width:1px; border-color:#C0CCD9; border-style:dashed;">
+        <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIEACbnqo_t6ttgyTz0PU2J16JWWXJmw1oUuEMgd_5WokCjIVuhYbysoUiR20wRpcy0Y95Ti07PyOhAHEZ63_jboxB6UQ9RLHyJHGBlrX5d0gUYsUI8sWY3xRgr2tBCsb_U_jWQ9LSG-GkbV45cm24EiDAuERrl_EX0Y-4B7NN2AomayBZDHLeFeVujQ0ztzeCZzGoe8TVim8IL">
+          <div class="sib-form-block" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
+            <div class="sib-text-form-block">
+              <p>Join our mailing list to stay current and recieve teaching FREEBIES!</p>
+            </div>
+          </div>
+          <div class="sib-form-block sib-divider-form-block">
+            <div style="border-bottom: 1px solid #E5EDF6"></div>
+          </div>
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="FIRSTNAME" data-required="*">
+                  Enter your First Name
+                </label>
+
+                <div class="entry__field">
+                  <input class="input" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="First Name Here" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4;">
+                Customize this optional help text before publishing your form.
+              </label>
+            </div>
+          </div>
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">
+                  Enter your email address to subscribe
+                </label>
+
+                <div class="entry__field">
+                  <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email Here" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4;">
+                Provide your email address to subscribe. For e.g abc@xyz.com
+              </label>
+            </div>
+          </div>
+          <div class="sib-form-block" style="text-align: center">
+            <button class="sib-form-block__button" style=" font-size:16px; text-align:center; font-family:&quot;Palatino&quot;, serif; color:#FFFFFF; background-color:#ce309c; border-radius:7px;" form="sib-form" type="submit">
+              SUBSCRIBE
+            </button>
+            <div class="sib-loader" style="display: none;">
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+              <div style="background: #ce309c;"></div>
+            </div>
+          </div>
+          <div class="sib-form-block" style=" font-size:14px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent;">
+            <div class="sib-text-form-block">
+              <p>
+                <a href="https://sendinblue.com" target="target_blank">Terms &amp; Privacy policy</a>
+              </p>
+            </div>
+          </div>
+          <input type="text" name="email_address_check" value="" class="input--hidden">
+          <input type="hidden" name="locale" value="en">
+          <input type="hidden" name="html_type" value="simple">
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>
